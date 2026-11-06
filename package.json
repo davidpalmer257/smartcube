@@ -1,0 +1,24 @@
+{
+  "name": "smartcube-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Responsive SmartCube website redesign with 15 dedicated pages, interactive service search and case study filtering. Designed by David at Flexo Studio.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "python3 -m http.server 4173 --bind 127.0.0.1 --directory dist",
+    "check": "python3 scripts/check-site.py && node --check src/app.js && node --check scripts/build.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "author": {
+    "name": "David",
+    "url": "https://flexostudio.tech"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidpalmer257/smartcube.git"
+  },
+  "homepage": "https://smartcube-redesign.vaillantmbarirumuhiz.chatgpt.site"
+}
