@@ -19,7 +19,7 @@ The website presents SmartCube’s services and success stories with its origina
 
 ## Run locally
 
-Requires **Node.js 18+** and **Python 3**. No dependency installation is needed.
+Uses **Node.js 24.x** and **Python 3**. No dependency installation is needed.
 
 ```sh
 git clone https://github.com/davidpalmer257/smartcube.git
@@ -53,6 +53,12 @@ npm run check
 The checks validate local page links, anchors, image paths, SVG files, heading structure, JavaScript syntax, and the absence of popup navigation.
 
 ## Deploy
+
+### Vercel
+
+Import this repository and use its root directory. The included `vercel.json` configures the build command as `npm run build`, the output directory as `dist`, and the framework preset as **Other**. Node.js is pinned to **24.x** in `package.json`.
+
+### Other static hosts
 
 Build and upload the contents of `dist/` to a static host that supports directory index pages. Serve nested URLs such as `/services/smart-healthcare-solutions/` from their corresponding `index.html` files.
 
